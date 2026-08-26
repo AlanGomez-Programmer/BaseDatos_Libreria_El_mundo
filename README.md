@@ -78,6 +78,14 @@ CREATE TABLE IF NOT EXISTS Autor_Libro(
 
 El mismo patrón se repite en `Pedido_libro` para relacionar pedidos con libros.
 
+### 4. Archivos `.mwb` para visualizar los diagramas
+ 
+En la ruta [`database/diagramas`](./database/diagramas/) se incluyen dos archivos de **MySQL Workbench** (`.mwb`) que permiten explorar el modelo de forma visual e interactiva:
+ 
+- [`Diagrama ER UML.mwb`](./database/diagramas/Diagrama%20ER%20UML.mwb) — Es el modelo entidad-relación **diseñado antes de escribir el SQL**, usado como guía inicial para estructurar las tablas y sus relaciones.
+- [`Reverse_Engineer_Resultado.mwb`](./database/diagramas/Reverse_Engineer_Resultado.mwb) — Es el diagrama generado **a partir del `DDL.sql` ya ejecutado**, usando la función *Reverse Engineer* de Workbench. Sirve para confirmar que la base de datos creada coincide con el diseño original.
+Para abrirlos necesitas tener **MySQL Workbench** instalado; solo debes descargar el archivo y abrirlo directamente desde la aplicación (`File > Open Model`). Ahí podrás hacer zoom, mover las tablas y ver las relaciones con más detalle que en una imagen fija.
+
 ---
 
 ## 📁 Estructura del proyecto
