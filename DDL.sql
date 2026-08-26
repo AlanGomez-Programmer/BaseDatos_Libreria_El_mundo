@@ -56,7 +56,7 @@ CREATE TABLE IF NOT EXISTS Autor_Libro(
 CREATE TABLE IF NOT EXISTS Cliente(
     id_cliente INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(75) NOT NULL,
-    correo_electronico VARCHAR(45) NOT NULL,
+    correo_electronico VARCHAR(45) NOT NULL UNIQUE,
     telefono VARCHAR(45) NOT NULL,
     direccion VARCHAR(50) NOT NULL
 ); 
