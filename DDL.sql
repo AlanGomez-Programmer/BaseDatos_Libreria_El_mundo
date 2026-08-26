@@ -94,7 +94,7 @@ CREATE TABLE IF NOT EXISTS Transaccion(
     id_transaccion INT NOT NULL PRIMARY KEY,
     monto_total VARCHAR(45) NOT NULL,
     fecha_transaccion DATE NOT NULL,
-    id_pedido INT NOT NULL,
+    id_pedido INT NOT NULL UNIQUE,
     id_metodo_pago INT NOT NULL,
     FOREIGN KEY (id_pedido) REFERENCES Pedido(id_pedido),
     FOREIGN KEY (id_metodo_pago) REFERENCES Metodo_pago(id_metodo_pago)
